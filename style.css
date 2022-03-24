@@ -232,9 +232,12 @@ body footer div {
     overflow-x: auto;
     overflow-y: hidden;
   }
-  body main div section.left div.tab_container div.tab_list_block ul.tab_list li a {
+  body main div section.left div.tab_container div.tab_list_block li a {
     width: 120px;
     padding: 5px 20px 10px 20px;
+  }
+  body main div section.left div.tab_container ul.tab_list::-webkit-scrollbar {
+    display: none;
   }
   body main div section.left div.tab_container div.tab_contents {
     padding-top: 30px;

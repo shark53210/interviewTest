@@ -108,6 +108,7 @@ body {
 
                 div {
                     text-align: center;
+
                     div.circle {
                         border: 1px solid #EC5760;
                         width: 80px;
@@ -115,6 +116,7 @@ body {
                         margin: 0 auto;
                         border-radius: 100%;
                     }
+
                     p {
                         color: #C4C4C4;
                     }
@@ -161,6 +163,7 @@ body {
             }
         }
     }
+
     footer {
         div {
             background-color: #C4C4C4;
@@ -172,66 +175,82 @@ body {
 
 
 @media screen and (max-width: 414px) {
-    body{
-        main{
+    body {
+        main {
             height: auto;
-            div{
+
+            div {
                 display: flex;
                 flex-direction: column;
                 padding-top: 0;
                 padding-bottom: 0;
-                section.right{
+
+                section.right {
                     width: 100%;
                     margin-left: 0;
                     order: 0;
                     border-radius: 0px;
-                    div{
-                        div.circle{
+
+                    div {
+                        div.circle {
                             margin-top: 100px;
                         }
-                        div.follwer{
+
+                        div.follwer {
                             flex-direction: row;
                         }
-                        button{
+
+                        button {
                             margin: 0 auto;
                         }
-                        ul{
+
+                        ul {
                             display: none;
                         }
                     }
                 }
-                section.left{
+
+                section.left {
                     order: 1;
                     width: 100%;
-                        div.tab_container{
-                            border-radius: 0px;
-                            padding-top: 30px;
-                            padding-bottom: 50px;
-                            div.tab_list_block{
-                                ul.tab_list{
-                                    display: flex;
-                                    overflow-x:auto;
-                                    overflow-y: hidden;
-                                    li{
-                                        a{
-                                            width: 120px ;
-                                            padding: 5px 20px 10px 20px;
-                                        }
-                                    }
+
+                    div.tab_container {
+                        border-radius: 0px;
+                        padding-top: 30px;
+                        padding-bottom: 50px;
+
+                        div.tab_list_block {
+                            ul.tab_list {
+                                display: flex;
+                                overflow-x: auto;
+                                overflow-y: hidden;
+                            }
+
+                            li {
+                                a {
+                                    width: 120px;
+                                    padding: 5px 20px 10px 20px;
                                 }
                             }
-                            div.tab_contents{
-                                padding-top: 30px;
-                            }
+                        }
+
+                        ul.tab_list::-webkit-scrollbar {
+                            display: none;
+
+                        }
+                        div.tab_contents {
+                            padding-top: 30px;
+                        }
                     }
                 }
             }
         }
+
         footer {
             div {
                 height: 50vh;
             }
         }
-    
+
     }
 }
