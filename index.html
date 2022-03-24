@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <div></div>
+    </header>
+    <main>
+        <div>
+            <section class="left">
+                <div class="tab_container">
+
+                    <div class="tab_list_block">
+                        <ul class="tab_list">
+                            <li><a href="#" class="tab -on">持有的NFT</a></li>
+                            <li><a href="#" class="tab">喜歡的NFT</a></li>
+                            <li><a href="#" class="tab">收藏的新聞</a></li>
+                            <li><a href="#" class="tab">收藏的文章</a></li>
+                            <li><a href="#" class="tab">關注的項目</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab_contents">
+
+                        <div class="tab tab1 -on">
+                            <img src="./imgs/drink1.png" alt="">
+                            <h1>空空如也～</h1>
+                            <p>使用者隱藏或沒有持有NFT</p>
+                        </div>
+
+                        <div class="tab tab2">
+                            <img src="./imgs/drink2.png" alt="">
+                            <h1>空空如也～</h1>
+                            <p>使用者隱藏或沒有喜歡的NFT</p>
+                        </div>
+
+                        <div class="tab tab3">
+                            <img src="./imgs/drink3.png" alt="">
+                            <h1>空空如也～</h1>
+                            <p>使用者隱藏或沒有收藏的新聞</p>
+                        </div>
+                        <div class="tab tab4">
+                            <img src="./imgs/drink4.png" alt="">
+                            <h1>空空如也～</h1>
+                            <p>使用者隱藏或沒有收藏的文章</p>
+                        </div>
+                        <div class="tab tab5">
+                            <img src="./imgs/drink5.png" alt="">
+                            <h1>空空如也～</h1>
+                            <p>使用者隱藏或沒有關注的項目</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+            <section class="right">
+                <div>
+                    <div class="circle"></div>
+                    <h1>Alexznder Aizenshtat</h1>
+                    <p>@Ailex0329</p>
+                    <p>The world META,familiar almost st to ever NFT-lover,comes from Greek and means 《between》 and《above可以寫上100字 </p>
+                    <div class="follwer">
+                        <h1>1K</h1>
+                        <p class="p1">folowers</p>
+                        <h1>50</h1>
+                        <p>follwing</p>
+                    </div>
+                    <button>追蹤</button>
+                    <ul>
+                        <li><img src="./icons/fb.png" alt=""></li>
+                        <li><img src="./icons/line.png" alt=""></li>
+                        <li><img src="./icons/twitter.png" alt=""></li>
+                        <li><img src="./icons/email.png" alt=""></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div></div>
+    </footer>
+    <script>
+        const tab = document.querySelectorAll('a.tab')
+        const content = document.querySelectorAll('div.tab')
+
+        for (let i = 0; i < tab.length; i++) {
+            tab[i].addEventListener('click', (e) => {
+                for (let i = 0; i < tab.length; i++) {
+                    tab[i].classList.remove('-on')
+                    content[i].classList.remove('-on')
+                }
+                if (e.target == tab[i]) {
+                    e.target.classList.add('-on')
+                    switch (i) {
+                        case 0:
+                            content[i].classList.add('-on')
+                            break
+                        case 1:
+                            content[i].classList.add('-on')
+                            break
+                        case 2:
+                            content[i].classList.add('-on')
+                            break
+                        case 3:
+                            content[i].classList.add('-on')
+                            break
+                        case 4:
+                            content[i].classList.add('-on')
+                            break
+
+                    }
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>

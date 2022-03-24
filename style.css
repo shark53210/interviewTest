@@ -1,0 +1,246 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #F1F5F8;
+}
+
+body header div {
+  background-color: #C4C4C4;
+  width: 100%;
+  height: 13vh;
+}
+
+body main {
+  background-color: #F1F5F8;
+  width: 95%;
+  margin: 0 auto;
+  height: 74vh;
+}
+
+body main div {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+body main div section.left {
+  width: 68%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+body main div section.left div.tab_container {
+  background-color: #FFF;
+  border-radius: 10px;
+}
+
+body main div section.left div.tab_container div.tab_list_block ul.tab_list {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+body main div section.left div.tab_container div.tab_list_block ul.tab_list li {
+  display: inline-block;
+}
+
+body main div section.left div.tab_container div.tab_list_block ul.tab_list li a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 20px 15px 20px;
+  cursor: pointer;
+  color: black;
+  position: relative;
+}
+
+body main div section.left div.tab_container div.tab_list_block ul.tab_list li a::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: -1px;
+}
+
+body main div section.left div.tab_container div.tab_list_block ul.tab_list li a.-on {
+  color: #29AFCB;
+}
+
+body main div section.left div.tab_container div.tab_list_block ul.tab_list li a.-on::after {
+  background-color: #29AFCB;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px 5px 0 0;
+}
+
+body main div section.left div.tab_container div.tab_contents div.tab {
+  padding: 10px;
+  display: none;
+}
+
+body main div section.left div.tab_container div.tab_contents div.tab img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+body main div section.left div.tab_container div.tab_contents div.tab h1 {
+  text-align: center;
+}
+
+body main div section.left div.tab_container div.tab_contents div.tab p {
+  text-align: center;
+}
+
+body main div section.left div.tab_container div.tab_contents div.tab.-on {
+  display: block;
+}
+
+body main div section.right {
+  width: 25%;
+  display: inline-block;
+  background-color: #FFF;
+  margin-left: 80px;
+  border-radius: 10px;
+}
+
+body main div section.right div {
+  text-align: center;
+}
+
+body main div section.right div div.circle {
+  border: 1px solid #EC5760;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  border-radius: 100%;
+}
+
+body main div section.right div p {
+  color: #C4C4C4;
+}
+
+body main div section.right div div.follwer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding-top: 0;
+}
+
+body main div section.right div div.follwer h1 {
+  padding-right: 10px;
+}
+
+body main div section.right div div.follwer p.p1 {
+  padding-right: 35px;
+}
+
+body main div section.right div button {
+  width: 280px;
+  height: 46px;
+  background-color: #29AFCB;
+  border: 0;
+  color: #FFF;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+body main div section.right div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+}
+
+body main div section.right div ul li img {
+  width: 30px;
+  margin: 0 10px;
+}
+
+body footer div {
+  background-color: #C4C4C4;
+  width: 100%;
+  height: 13vh;
+}
+
+@media screen and (max-width: 414px) {
+  body main {
+    height: auto;
+  }
+  body main div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  body main div section.right {
+    width: 100%;
+    margin-left: 0;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    border-radius: 0px;
+  }
+  body main div section.right div div.circle {
+    margin-top: 100px;
+  }
+  body main div section.right div div.follwer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body main div section.right div button {
+    margin: 0 auto;
+  }
+  body main div section.right div ul {
+    display: none;
+  }
+  body main div section.left {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+  }
+  body main div section.left div.tab_container {
+    border-radius: 0px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  body main div section.left div.tab_container div.tab_list_block ul.tab_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  body main div section.left div.tab_container div.tab_list_block ul.tab_list li a {
+    width: 120px;
+    padding: 5px 20px 10px 20px;
+  }
+  body main div section.left div.tab_container div.tab_contents {
+    padding-top: 30px;
+  }
+  body footer div {
+    height: 50vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */
