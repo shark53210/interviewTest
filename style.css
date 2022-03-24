@@ -48,7 +48,7 @@ body main div section.left div.tab_container div.tab_list_block ul.tab_list li {
   display: inline-block;
 }
 
-body main div section.left div.tab_container div.tab_list_block ul.tab_list li a {
+body main div section.left div.tab_container div.tab_list_block ul.tab_list li span {
   text-decoration: none;
   display: inline-block;
   padding: 5px 20px 15px 20px;
@@ -57,18 +57,18 @@ body main div section.left div.tab_container div.tab_list_block ul.tab_list li a
   position: relative;
 }
 
-body main div section.left div.tab_container div.tab_list_block ul.tab_list li a::after {
+body main div section.left div.tab_container div.tab_list_block ul.tab_list li span::after {
   content: "";
   position: absolute;
   bottom: -1px;
   left: -1px;
 }
 
-body main div section.left div.tab_container div.tab_list_block ul.tab_list li a.-on {
+body main div section.left div.tab_container div.tab_list_block ul.tab_list li span.-on {
   color: #29AFCB;
 }
 
-body main div section.left div.tab_container div.tab_list_block ul.tab_list li a.-on::after {
+body main div section.left div.tab_container div.tab_list_block ul.tab_list li span.-on::after {
   background-color: #29AFCB;
   width: 100%;
   height: 5px;
@@ -176,7 +176,7 @@ body footer div {
   height: 13vh;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 500px) {
   body main {
     height: auto;
   }
@@ -232,7 +232,7 @@ body footer div {
     overflow-x: auto;
     overflow-y: hidden;
   }
-  body main div section.left div.tab_container div.tab_list_block li a {
+  body main div section.left div.tab_container div.tab_list_block li span {
     width: 120px;
     padding: 5px 20px 10px 20px;
   }
