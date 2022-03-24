@@ -123,6 +123,10 @@ body main div section.right div p {
   color: #C4C4C4;
 }
 
+body main div section.right div p.p2 {
+  padding: 0 60px;
+}
+
 body main div section.right div div.follwer {
   display: -webkit-box;
   display: -ms-flexbox;
